@@ -3,8 +3,7 @@ from pyramid.view import (
     view_defaults
     )
 
-
-@view_defaults(renderer='home.jinja2')
+@view_defaults(renderer='home.pt')
 class TutorialViews:
     def __init__(self, request):
         self.request = request
